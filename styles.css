@@ -1,0 +1,110 @@
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0 ;
+  
+  
+  
+  
+  }
+  @media(min-widgt:600px){
+    .grid-container{
+      grid-template-areas: 
+      "header header"200px
+      "nav nav" 50px
+      "article article"
+      "aside aside" 
+      "footer aside" 100px;
+    
+    
+    
+    }
+    
+    }
+    
+  
+  
+  
+  
+  html{
+  
+    height:100%;
+  }
+  body{
+  min-height: 100%;
+  
+  }
+  
+  .header{
+  
+    grid-area: header;
+    background-color:blue;
+  }
+  
+  .nav{
+    grid-area: nav;
+    background-color: aquamarine;
+  }
+  .article{
+  margin-top: 4em;
+  grid-area: article;
+  background-color: beige;
+  display:flex;
+  
+  }
+  .aside{
+  grid-area: aside;
+  background-color: blueviolet;
+  
+  }
+  .footer{
+  position: absolute;
+  bottom: 0;
+  grid-area: footer;
+  background-color: brown;
+  width: 100%;
+  }
+  
+  
+  
+  .grid-container{
+  display: grid;
+  gap:10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows:50px 100px 60% 100px;
+  grid-template-areas: 
+  "nav nav nav" 
+  "header header header"
+  "article article article"  
+  "footer footer footer";
+  
+  }
+  .grid-container>*{
+    box-shadow:-1px 1px 7px 0px rgba(0, 0, 0, 0.75) ; 
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  
+  }
+  .grid-item{
+   width:100%;
+   box-shadow:-1px 1px 7px 0px rgba(0, 0, 0, 0.75) ;
+   margin: 5px;
+  }
+  
+  
+  
+   .img-articulo{
+    background:url("https://blogs.iadb.org/conocimiento-abierto/wp-content/uploads/sites/10/2019/12/banner-lecciones-aprendidas-proyectos-desarrollo-2019.jpg");
+    
+   height: 50%;
+   width: 100%;
+   max-width: 1000px;
+   max-height: 1000px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+   }
+   
